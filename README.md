@@ -120,7 +120,7 @@ Kemudian kita menjawab sesuai perintah soal menggunakan *Display Filter*.
 	
 	**Jawab**:
 
-    Sama seperti soal nomor 5, bedanya pada metode. Pada nomor ini yang diminta adalah metode "GET". Sehingga *syntax* menjadi `http.host ==  "monta.if.its.ac.id" && http.request.method == GET`. Hasilnya:
+    Sama seperti soal nomor 5, bedanya pada metode. Pada nomor ini yang diminta adalah metode `GET`. Sehingga *syntax* menjadi `http.host ==  "monta.if.its.ac.id" && http.request.method == GET`. Hasilnya:
 
     ![Paket metode GET](images/display9.png)
 
@@ -128,7 +128,7 @@ Kemudian kita menjawab sesuai perintah soal menggunakan *Display Filter*.
 	
 	**Jawab**:
 
-	*Syntax*-nya `ftp.request.command == "USER" || ftp.request.command == "PASS"`. Menggunakan operator 'atau' (||) untuk menampilkan *command* "USER" dan "PASS".
+	*Syntax*-nya `ftp.request.command == "USER" || ftp.request.command == "PASS"`. Menggunakan operator 'atau' (||) untuk menampilkan *command* `USER` dan `PASS`.
 
 	![Username dan Password](images/display10.png)	
 
@@ -137,7 +137,7 @@ Kemudian kita menjawab sesuai perintah soal menggunakan *Display Filter*.
 	
 	**Jawab**:
 
-	Karena *upload*, maka menggunakan *command* "STOR". Sehingga *syntax*-nya `ftp.request.command == STOR && ftp.request.arg == "qwpeaspojdasjfpasjfpaosuhuy.jpg"`. Akan seperti berikut:
+	Karena *upload*, maka menggunakan *command* `STOR`. Sehingga *syntax*-nya `ftp.request.command == STOR && ftp.request.arg == "qwpeaspojdasjfpasjfpaosuhuy.jpg"`. Akan seperti berikut:
 
 	![Hasil nomor 11](images/display11.png)
 
@@ -147,7 +147,7 @@ Kemudian kita menjawab sesuai perintah soal menggunakan *Display Filter*.
 	
 	**Jawab**:
 
-	Seperti nomor 11, bedanya pada *command* yang digunakan. Disini menggunakan "DELE" ketika menghapus file. Sehingga menjadi `ftp.request.command == DELE && ftp.request.arg == "qwpeaspojdasjfpasjfpaos.jpg"`. Berikut hasilnya:
+	Seperti nomor 11, bedanya pada *command* yang digunakan. Disini menggunakan `DELE` ketika menghapus file. Sehingga menjadi `ftp.request.command == DELE && ftp.request.arg == "qwpeaspojdasjfpasjfpaos.jpg"`. Berikut hasilnya:
 
 	![Hasil nomor 12](images/display12.png)
     
@@ -155,7 +155,7 @@ Kemudian kita menjawab sesuai perintah soal menggunakan *Display Filter*.
 	
 	**Jawab**:
 
-	Untuk *command* mengganti nama file adalah "RNFR". Sehingga `ftp.request.command == RNFR && ftp.request.arg == "sutlin.png"`. Hasilnya:
+	Untuk *command* mengganti nama file adalah `RNFR`. Sehingga `ftp.request.command == RNFR && ftp.request.arg == "sutlin.png"`. Hasilnya:
 
 	![Hasil nomor 13](images/display13.png)
     
@@ -163,7 +163,7 @@ Kemudian kita menjawab sesuai perintah soal menggunakan *Display Filter*.
 	
 	**Jawab**:
 
-	Sedangkan untuk mengunduh menggunakan *command* "RETR". *Syntax* akhir `ftp.request.command == RETR && ftp.request.arg =="sutlun.png"`. Hasilnya seperti dibawah:
+	Sedangkan untuk mengunduh menggunakan *command* `RETR`. *Syntax* akhir `ftp.request.command == RETR && ftp.request.arg =="sutlun.png"`. Hasilnya seperti dibawah:
 
     ![Hasil nomor 14](images/display14.png)
 
