@@ -83,10 +83,29 @@ Kemudian kita menjawab sesuai perintah soal menggunakan *Display Filter*.
 	
 	**Jawab**:
 
+	- Pertama klik pada `menu bar` yang `File` -> `Export Objects` -> `HTTP...`. Tampilan akan seperti dibawah:
+
+	![Export HTTP](images/display3-1.png)
+
+	- Pada bagian `Find` cari sesuai nama file.
+
+	- Karena tidak ada file yang bernama `ckedokteran.png`, maka hasilnya:
+	
+	![Pencarian file](images/display3-2.png)
     
 4.  Cari charset dari halaman "ajk.if.its.ac.id"
 	
 	**Jawab**:
+
+	- Pada *display filter* gunakan *syntax* `http.host ==  "ajk.if.its.ac.id"`
+
+	- Kemudian pilih salah satu paket, klik kanan
+
+	- Pilih `Follow` kemudian `HTTP Stream`
+
+	- Cari *Charset*-nya
+
+	NB: Tidak bisa menampilkan gambar karena tidak bisa memuat hasil *filter*-nya.
 
     
 5.  Cari username dan password ketika login di "freeshare.lp.if.its ac.id"
