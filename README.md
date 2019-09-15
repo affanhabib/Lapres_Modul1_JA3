@@ -8,29 +8,29 @@ Untuk *Capture Filter*, menggunakan bagian seperti gambar dibawah ini pada *Wire
 ![Capture Filter](images/capture_filter.png)
  Ada 5 soal yang disajikan, yaitu:
  1. Filter sehingga wireshark hanya mengambil paket yang mengandung port 21
-**Jawab**:
+ **Jawab**:
 Pada *Capture Filter* ketik `tcp port 21`. Paket akan muncul ketika kita membuka *FIlezila*. Karena sedang tidak membukanya, maka tampilan hanya seperti berikut:
 ![Tampilan port 21](images/capture1.png)
 
  2. Filter sehingga wireshark hanya mengambil paket yang berasal dari port 80 (ajk.if.its.ac.id)
-**Jawab**:
+ **Jawab**:
 Masukkan `src port 80`. Setelah itu buka [ajk.if.its.ac.id](ajk.if.its.ac.id). Tampilan pada *Wireshark* akan seperti dibawah ini:
 ![Tampilan source port 80](images/capture2.png)
  
  3. Filter sehingga wireshark hanya menampilkan paket yang menuju port 443 (google.com)
-**Jawab**:
+ **Jawab**:
 Ketik `dst port 443`. Dalam soal, untuk mengetes menggunakan [google.com](google.com). Tetapi saat kami menjalankannya, kami telah membuka [youtube.com](youtube.com) dan [stackedit.io](stackedit.io). *Wireshark* menampilkan seperti ini:
 ![Tampilan destination port 443](images/capture3.png)
 
  4. Filter sehingga wireshark hanya mengambil paket yang berasal dari ip kalian
-**Jawab**:
+ **Jawab**:
 Pertama mencari IP dengan `ipconfig` pada *command promt*. 
 ![Tampilan ipconfig](images/ipconfig.png)
 Diketahui IP kami `192.168.88.108`. Kemudian pada *Wireshark* ketik `ip src 192.168.88.108`. Hasilnya seperti dibawah ini:
 ![Tampilan source dari ip sendiri](images/capture4.png)
 
  5. Filter sehingga wireshark hanya mengambil paket yang tujuannya ke monta.if.its.ac.id
-**Jawab**:
+ **Jawab**:
 Ketik `dst host monta.if.its.ac.id`. Kemudian buka [monta.if.its.ac.id](monta.if.its.ac.id). Hasil akan seperti berikut:
 ![Tampilan destination monta.if.its.ac.id](images/capture5.png)
 
