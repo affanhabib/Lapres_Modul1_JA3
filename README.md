@@ -124,7 +124,7 @@ Kemudian kita menjawab sesuai perintah soal menggunakan *Display Filter*.
 
     ![Paket metode GET](images/display9.png)
 
-10.  Tunjukkan username dan password yang dimasukkan ketika login FTP
+10. Tunjukkan username dan password yang dimasukkan ketika login FTP
 	
 	**Jawab**:
 
@@ -133,7 +133,7 @@ Kemudian kita menjawab sesuai perintah soal menggunakan *Display Filter*.
 	![Username dan Password](images/display10.png)	
 
     
-11.  Tunjukkan di wireshark, paket mana yang dikirimkan FTP client ketika upload file "qwpeaspojdasjfpasjfpaosuhuy.jpg"
+11. Tunjukkan di wireshark, paket mana yang dikirimkan FTP client ketika upload file "qwpeaspojdasjfpasjfpaosuhuy.jpg"
 	
 	**Jawab**:
 
@@ -143,7 +143,7 @@ Kemudian kita menjawab sesuai perintah soal menggunakan *Display Filter*.
 
 	Untuk *FTP Command and Extensions* selengkapnya bisa klik [disini](https://www.iana.org/assignments/ftp-commands-extensions/ftp-commands-extensions.xml).
     
-12.  Tunjukkan di wireshark, paket mana yang dikirimkan FTP client ketika menghapus file "qwpeaspojdasjfpasjfpaos.jpg"
+12. Tunjukkan di wireshark, paket mana yang dikirimkan FTP client ketika menghapus file "qwpeaspojdasjfpasjfpaos.jpg"
 	
 	**Jawab**:
 
@@ -151,7 +151,7 @@ Kemudian kita menjawab sesuai perintah soal menggunakan *Display Filter*.
 
 	![Hasil nomor 12](images/display12.png)
     
-13.  Tunjukkan di wireshark, paket mana yang dikirimkan FTP client ketika mengganti nama file "sutlin.png"
+13. Tunjukkan di wireshark, paket mana yang dikirimkan FTP client ketika mengganti nama file "sutlin.png"
 	
 	**Jawab**:
 
@@ -159,7 +159,7 @@ Kemudian kita menjawab sesuai perintah soal menggunakan *Display Filter*.
 
 	![Hasil nomor 13](images/display13.png)
     
-14.  Tunjukkan di wireshark, paket mana yang dikirimkan FTP client ketika download file "sutlun.png"
+14. Tunjukkan di wireshark, paket mana yang dikirimkan FTP client ketika download file "sutlun.png"
 	
 	**Jawab**:
 
@@ -167,7 +167,7 @@ Kemudian kita menjawab sesuai perintah soal menggunakan *Display Filter*.
 
     ![Hasil nomor 14](images/display14.png)
 
-15.  Cari file .zip di wireshark lalu download dan extract file tersebut
+15. Cari file .zip di wireshark lalu download dan extract file tersebut
 
 	clue "50 4B 03 04"
 
