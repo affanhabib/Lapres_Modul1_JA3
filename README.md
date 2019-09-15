@@ -121,10 +121,32 @@ Kemudian kita menjawab sesuai perintah soal menggunakan *Display Filter*.
 	
 	**Jawab**:
 
+	- Filter menggunakan `http.host ==  "www.ne.its.ac.id"`. Hasilnya seperti nomor 1
+
+	- Kemudian langkah seperti nomor 3, klik kanan pada salah satu paket. Pilih `Follow` kemudian `HTTP Stream`. 
+
+	![Membuka HTTP Stream](images/display6-1.png)
+
+	- Cari `server` pada `find`. Hasilnya:
+
+	![Melihat server](images/display6-2.png)
+
 
 7.  Sebutkan versi PHP dan yang digunakan pada "riset.ajk.if.its.ac.id"
 	
 	**Jawab**:
+
+	- Sama seperti nomor 3 dan nomor 6, pertama filter. Filter dengan `http.host == "riset.ajk.if.its.ac.id"`
+
+	![Hasil filter](images/display7-1.png)	
+
+	- Klik kanan pada salah satu paket. Pilih `Follow` kemudian `HTTP Stream`. 
+
+	![Membuka HTTP Stream](images/display7-2.png)
+
+	- Cari `PHP` pada `find`. Hasilnya:
+
+	![Melihat versi PHP](images/display7-3.png)
 
 
 8.  Filter pada wireshark kalian sehingga menampilkan hasil ping
@@ -192,3 +214,32 @@ Kemudian kita menjawab sesuai perintah soal menggunakan *Display Filter*.
 
 	**Jawab**:
 
+	Mencari dengan menggunakan clue yang diberikan.
+
+	- Cari dengan `Find a packet`, seperti pada gambar. Klik
+
+	![Find a packet](images/display15-1.png)
+
+	- Pada lingkaran merah di gambar ini ganti menjadi `Hex velue`. Lalu masukkan clue tadi. Klik `Find`
+
+	![Hex value](images/display15-2.png)
+
+	- Maka akan ada paket yang diblok hitam, seperti pada gambar
+
+	![Hasil find](images/display15-3.png)
+
+	- Klik kanan pada paket tersebut. Pilih `Follow` kemudia `TCP Stream`. Hasilnya
+
+	![TCP Stream](images/display15-4.png)
+
+	- Ganti lingkaran merah menjadi `RAW`, seperti pada gambar.
+
+	![Ubah menjadi raw](images/display15-6.png)
+
+	- Save as seperti dibawah ini
+
+	![Ubah menjadi raw](images/display15-5.png)	
+
+	- Hasil akhirnya
+
+	![Hasil akhir](images/display15-7.png)
