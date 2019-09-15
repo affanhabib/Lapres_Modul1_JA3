@@ -8,6 +8,7 @@ Untuk *Capture Filter*, menggunakan bagian seperti gambar dibawah ini pada *Wire
 ![Capture Filter](images/capture_filter.png)
  Ada 5 soal yang disajikan, yaitu:
  1. Filter sehingga wireshark hanya mengambil paket yang mengandung port 21
+
  **Jawab**:
 Pada *Capture Filter* ketik `tcp port 21`. Paket akan muncul ketika kita membuka *FIlezila*. Karena sedang tidak membukanya, maka tampilan hanya seperti berikut:
 ![Tampilan port 21](images/capture1.png)
