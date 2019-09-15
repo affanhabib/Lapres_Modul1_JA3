@@ -128,29 +128,45 @@ Kemudian kita menjawab sesuai perintah soal menggunakan *Display Filter*.
 	
 	**Jawab**:
 
-	
+	*Syntax*-nya `ftp.request.command == "USER" || ftp.request.command == "PASS"`. Menggunakan operator 'atau' (||) untuk menampilkan *command* "USER" dan "PASS".
+
+	![Username dan Password](images/display10.png)	
 
     
 11.  Tunjukkan di wireshark, paket mana yang dikirimkan FTP client ketika upload file "qwpeaspojdasjfpasjfpaosuhuy.jpg"
 	
 	**Jawab**:
 
+	Karena *upload*, maka menggunakan *command* "STOR". Sehingga *syntax*-nya `ftp.request.command == STOR && ftp.request.arg == "qwpeaspojdasjfpasjfpaosuhuy.jpg"`. Akan seperti berikut:
+
+	![Hasil nomor 11](images/display11.png)
+
+	Untuk *FTP Command and Extensions* selengkapnya bisa klik [disini](https://www.iana.org/assignments/ftp-commands-extensions/ftp-commands-extensions.xml).
     
 12.  Tunjukkan di wireshark, paket mana yang dikirimkan FTP client ketika menghapus file "qwpeaspojdasjfpasjfpaos.jpg"
 	
 	**Jawab**:
 
+	Seperti nomor 11, bedanya pada *command* yang digunakan. Disini menggunakan "DELE" ketika menghapus file. Sehingga menjadi `ftp.request.command == DELE && ftp.request.arg == "qwpeaspojdasjfpasjfpaos.jpg"`. Berikut hasilnya:
+
+	![Hasil nomor 12](images/display12.png)
     
 13.  Tunjukkan di wireshark, paket mana yang dikirimkan FTP client ketika mengganti nama file "sutlin.png"
 	
 	**Jawab**:
 
+	Untuk *command* mengganti nama file adalah "RNFR". Sehingga `ftp.request.command == RNFR && ftp.request.arg == "sutlin.png"`. Hasilnya:
+
+	![Hasil nomor 13](images/display13.png)
     
 14.  Tunjukkan di wireshark, paket mana yang dikirimkan FTP client ketika download file "sutlun.png"
 	
 	**Jawab**:
 
-    
+	Sedangkan untuk mengunduh menggunakan *command* "RETR". *Syntax* akhir `ftp.request.command == RETR && ftp.request.arg =="sutlun.png"`. Hasilnya seperti dibawah:
+
+    ![Hasil nomor 14](images/display14.png)
+
 15.  Cari file .zip di wireshark lalu download dan extract file tersebut
 
 	clue "50 4B 03 04"
